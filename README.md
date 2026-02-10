@@ -7,70 +7,7 @@ Manual AVL Tree indexing for efficiency
 An interactive Streamlit UI
 This project applies the core data structures and algorithms learned during the semester — especially AVL Trees and Graph Algorithms — to create a functional and efficient system.
 
-📁 Folder Structure
-DSA-Project-Group-5/
-│
-├── main.py                         # Application entry point (launches Streamlit UI)
-├── README.md                       # Project documentation
-├── Project description.pdf         # Original project specification
-│
-├── data/                           # Steam dataset (CSV files)
-│   ├── applications.csv
-│   ├── application_categories.csv
-│   ├── application_developers.csv
-│   ├── application_genres.csv
-│   ├── application_platforms.csv
-│   ├── application_publishers.csv
-│   ├── categories.csv
-│   ├── developers.csv
-│   ├── genres.csv
-│   ├── platforms.csv
-│   ├── publishers.csv
-│   └── reviews_final.csv
-│
-├── src/
-│   ├── __init__.py
-│   │
-│   ├── storage/                    # Core storage and indexing layer
-│   │   ├── avl_tree.py             # Manual AVL tree implementation
-│   │   ├── data_store.py           # In-memory data store with AVL indexes
-│   │   └── __init__.py
-│   │
-│   ├── query_engine/               # CRUD operations and range queries
-│   │   ├── query_handler.py
-│   │   └── __init__.py
-│   │
-│   ├── graph/                      # Graph-based features
-│   │   ├── graph_model.py          # Adjacency-map graph implementation
-│   │   ├── graph_algorithms.py     # BFS, DFS, shortest path, components
-│   │   └── __init__.py
-│   │
-│   ├── analytics/                  # Analytics and querying UI components
-│   │   ├── dataset_status.py       # Dataset loading overview
-│   │   ├── indexed_engine.py       # Indexed query engine builder
-│   │   ├── search_by_appid.py      # Indexed search by appid
-│   │   ├── search_by_name.py       # Linear name search (subset)
-│   │   ├── price_range.py          # AVL-based price range queries
-│   │   ├── basic_analytics.py      # Min / max / avg / median statistics
-│   │   ├── graph_explorer.py       # Graph exploration UI
-│   │   └── __init__.py
-│   │
-│   ├── ui/                         # Streamlit frontend
-│   │   ├── app.py                  # Main Streamlit application
-│   │   ├── graph_explorer.py       # Advanced graph UI (slice + full modes)
-│   │   └── __init__.py
-│   │
-│   ├── utils/                      # Utilities and data loading
-│   │   ├── data_loader.py          # CSV loader and cleaner (no pandas)
-│   │   ├── schemas.py              # Dataset schemas and type definitions
-│   │   └── __init__.py
-│   │
-│   └── test_storage.py             # Storage and AVL testing
-│
-└── .gitignore                      # Git ignore rules
 
-
----
 
 ## 💻 Programming Languages & Libraries
 
